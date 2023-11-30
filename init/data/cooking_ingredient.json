@@ -1,0 +1,109 @@
+[
+  {
+    "name": "cooking\\Ingredient",
+    "lang": "en",
+    "description": "Add a basic list of Ingredients",
+    "data": [
+      {
+        "name": "tomato",
+        "description": "Tomatoes are the major dietary source of the antioxidant lycopene, which has been linked to many health benefits, including reduced risk of heart disease and cancer. They are also a great source of vitamin C, potassium, folate, and vitamin K.",
+        "native_land": "South America"
+      },
+      {
+        "name": "onion",
+        "description": "Onions are a nutrient-dense food, meaning that while they are low in calories they are high in beneficial nutrients like vitamins, minerals and antioxidants. One cup of chopped onion contains approximately 64 calories, 15 grams of carbohydrate, 0 grams of fat, 0 grams of cholesterol, 3 grams of fiber, 7 grams of sugar, 2 grams of protein and 10% or more of the daily value for vitamin C, vitamin B-6 and manganese.",
+        "native_land": "Asia"
+      },
+      {
+        "name": "garlic",
+        "description": "Garlic is low in calories and rich in vitamin C, vitamin B6 and manganese. It also contains trace amounts of various other nutrients. Garlic supplements help prevent and reduce the severity of common illnesses like the flu and common cold.",
+        "native_land": "Asia"
+      },
+      {
+        "name": "salt",
+        "description": "Salt is a mineral composed primarily of sodium chloride (NaCl), a chemical compound belonging to the larger class of salts; salt in its natural form as a crystalline mineral is known as rock salt or halite. Salt is present in vast quantities in seawater, where it is the main mineral constituent. The open ocean has about 35 grams (1.2 oz) of solids per liter of sea water, a salinity of 3.5%.",
+        "native_land": "Asia"
+      },
+      {
+        "name": "pepper",
+        "description": "Black pepper (Piper nigrum) is a flowering vine in the family Piperaceae, cultivated for its fruit, known as a peppercorn, which is usually dried and used as a spice and seasoning. When fresh and fully mature, it is about 5 mm (0.20 in) in diameter and dark red, and contains a single seed, like all drupes. Peppercorns and the ground pepper derived from them may be described simply as pepper, or more precisely as black pepper (cooked and dried unripe fruit), green pepper (dried unripe fruit) and white pepper (ripe fruit seeds).",
+        "native_land": "Asia"
+      },
+      {
+        "name": "basil",
+        "description": "Basil is an herb in the mint family. It adds flavor to meals, and its nutrients may provide health benefits. Sweet basil (Ocimum basilicum) plays a role in Italian and Thai cuisine. There are many varieties of basil, as well as several related species or hybrids also called basil. Although basil is usually added to recipes in small quantities, it packs a punch of flavor and nutrients. Basil is a good source of vitamin K. Eating basil may help lower your blood pressure. Basil is a good source of magnesium, which promotes cardiovascular health by prompting muscles and blood vessels to relax, thus improving blood flow and lessening the risk of irregular heart rhythms or a spasming of the heart muscle or a blood vessel.",
+        "native_land": ""
+      },
+      {
+        "name": "oregano",
+        "description": "Oregano is a culinary herb, used for the flavor of its leaves, which can be more flavorful when dried than fresh. It has an aromatic, warm, and slightly bitter taste, which can vary in intensity. Good-quality oregano may be strong enough almost to numb the tongue, but cultivars adapted to colder climates may have a lesser flavor. Factors such as climate, seasons and soil composition may affect the aromatic oils present, and this effect may be greater than the differences between the various species of plants. Among the chemical compounds contributing to the flavor are carvacrol, thymol, limonene, pinene, ocimene, and caryophyllene.",
+        "native_land": "Italy"
+      },
+      {
+        "name": "olive oil",
+        "description": "Olive oil is a liquid fat obtained from olives (the fruit of Olea europaea; family Oleaceae), a traditional tree crop of the Mediterranean Basin. The oil is produced by pressing whole olives. It is commonly used in cooking, for frying foods or as a salad dressing. It is also used in cosmetics, pharmaceuticals, and soaps, and as a fuel for traditional oil lamps, and has additional uses in some religions. The olive is one of three core food plants in Mediterranean cuisine; the other two are wheat and grapes. Olive trees have been grown around the Mediterranean since the 8th millennium BC. Spain is the largest producer of olive oil, followed by Italy and Greece. However, per capita national consumption is highest in Greece, followed by Spain, Italy, and Morocco. Consumption in South Asia, North America and northern Europe is far less, but rising steadily.",
+        "native_land": "Mediterranean"
+      },
+      {
+        "name": "pasta",
+        "description": "Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking. Rice flour, or legumes such as beans or lentils, are sometimes used in place of wheat flour to yield a different taste and texture, or as a gluten-free alternative. Pasta is a staple food of Italian cuisine. Pastas are divided into two broad categories: dried (pasta secca) and fresh (pasta fresca). Most dried pasta is produced commercially via an extrusion process, although it can be produced at home. Fresh pasta is traditionally produced by hand, sometimes with the aid of simple machines. Fresh pastas available in grocery stores are produced commercially by large-scale machines.",
+        "native_land": "Italy"
+      },
+      {
+        "name": "cheese",
+        "description": "Cheese is a dairy product derived from milk that is produced in a wide range of flavors, textures, and forms by coagulation of the milk protein casein. It comprises proteins and fat from milk, usually the milk of cows, buffalo, goats, or sheep. During production, the milk is usually acidified, and adding the enzyme rennet causes coagulation. The solids are separated and pressed into final form. Some cheeses have molds on the rind, the outer layer, or throughout. Most cheeses melt at cooking temperature.",
+        "native_land": "Europe"
+      },
+      {
+        "name": "mozzarella",
+        "description": "Mozzarella is a traditionally southern Italian cheese made from Italian buffalo's milk by the pasta filata method. Mozzarella received a Traditional Specialities Guaranteed certification from the European Union in 1998. This protection scheme requires that mozzarella sold in the European Union is produced according to a traditional recipe. The TSG certification does not specify the source of the milk, so any type of milk can be used. In Italy mozzarella made with the milk of the Italian water buffalo is an important variety. Fresh mozzarella is generally white but may vary seasonally to slightly yellow depending on the animal's diet. Due to its high moisture content, it is traditionally served the day after it is made, but can be kept in brine for up to a week or longer when sold in vacuum-sealed packages. Low-moisture mozzarella can be kept refrigerated for up to a month, though some shredded low-moisture mozzarella is sold with a shelf life of up to six months.",
+        "native_land": "Italy"
+      },
+      {
+        "name": "parmesan",
+        "description": "Parmigiano-Reggiano is an Italian hard, granular cheese produced from cow's milk and aged at least 12 months. Parmigiano-Reggiano is a PDO (Protected Designation of Origin) product, produced under strict Italian law using only three ingredients: raw cow's milk, salt, and rennet. Parmigiano-Reggiano is made from unpasteurized cow's milk. The whole milk of the morning milking is mixed with the naturally skimmed milk (which is made by holding milk in large shallow tanks to allow the cream to separate) of the previous evening's milking, resulting in a part skim mixture. This mixture is pumped into copper-lined vats. Starter whey is added, and the temperature is raised to 33–35 °C (91–95 °F). Calf rennet is added, and the mixture is left to curdle for 10–12 minutes. The curd is then broken up mechanically into small pieces (around the size of rice grains). The temperature is then raised to 55 °C (131 °F) with careful control by the cheese-maker. The curd is left to settle for 45–60 minutes. The compacted curd is collected in a piece of muslin before being divided in two and placed in molds. There is 1100 L (291 US gal) of milk per vat, producing two cheeses each. The curd making up each wheel at this point weighs around 45 kg (99 lb). The remaining whey in the vat was traditionally used to feed the pigs from which Prosciutto di Parma (cured Parma ham) was produced.",
+        "native_land": "Italy"
+      },
+      {
+        "name": "pepperoni",
+        "description": "Pepperoni is an American variety of salami, made from a cured mixture of pork and beef seasoned with paprika or other chili pepper. Pepperoni is characteristically soft, slightly smoky, and bright red in color. Thinly sliced pepperoni is a popular pizza topping in American pizzerias. However, the term pepperoni has a wider application in American English for various similar, spicy, dry sausage products, such as several types of salami, made from different animals, and occasionally from fish.",
+        "native_land": "Italy"
+      },
+      {
+        "name": "water",
+        "description": "Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of most living organisms. It is vital for all known forms of life, even though it provides no calories or organic nutrients. Its chemical formula is H2O, meaning that each of its molecules contains one oxygen and two hydrogen atoms, connected by covalent bonds. Water is the name of the liquid state of H2O at standard ambient temperature and pressure. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds are formed from suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water moves continually through the water cycle of evaporation, transpiration (evapotranspiration), condensation, precipitation, and runoff, usually reaching the sea.",
+        "native_land": "Earth"
+      },
+      {
+        "name": "flour",
+        "description": "Flour is a powder made by grinding raw grains, roots, beans, nuts, or seeds. Flours are used to make many different foods. Cereal flour is the main ingredient of bread, which is a staple food for most cultures. Wheat flour is one of the most important ingredients in Oceanic, European, South American, North American, Middle Eastern, North Indian and North African cultures, and is the defining ingredient in their styles of breads and pastries. Wheat is the most common base for flour. Corn flour has been important in Mesoamerican cuisine since ancient times and remains a staple in the Americas. Rye flour is a constituent of bread in central Europe. Cereal flour consists either of the endosperm, germ, and bran together (whole-grain flour) or of the endosperm alone (refined flour).",
+        "native_land": "Earth"
+      },
+      {
+        "name": "yeast",
+        "description": "Yeast is a single-celled eukaryotic organism that reproduces asexually by budding or division, making it a type of fungus. The first yeast originated hundreds of millions of years ago, and at least 1,500 species are currently recognized. They are estimated to constitute 1% of all described fungal species. Yeasts are unicellular organisms that evolved from multicellular ancestors, with some species having the ability to develop multicellular characteristics by forming strings of connected budding cells known as pseudohyphae or false hyphae. Yeast sizes vary greatly, depending on species and environment, typically measuring 3–4 µm in diameter, although some yeasts can grow to 40 µm in size. Most yeasts reproduce asexually by mitosis, and many do so by the asymmetric division process known as budding.",
+        "native_land": "Earth"
+      },
+      {
+        "name": "sugar",
+        "description": "Sugar is the generic name for sweet-tasting, soluble carbohydrates, many of which are used in food. Table sugar, granulated sugar, or regular sugar, refers to sucrose, a disaccharide composed of glucose and fructose. Simple sugars, also called monosaccharides, include glucose, fructose, and galactose. Compound sugars, also called disaccharides or double sugars, are molecules composed of two monosaccharides joined by a glycosidic bond. Common examples are sucrose (glucose + fructose), lactose (glucose + galactose), and maltose (two molecules of glucose). In the body, compound sugars are hydrolysed into simple sugars. During digestion, the possible health benefits of sugar are a topic of controversy among researchers. Sugar is a type of carbohydrate. Simple sugars, also called monosaccharides, include glucose, fructose, and galactose. Compound sugars, also called disaccharides or double sugars, are molecules composed of two monosaccharides joined by a glycosidic bond. Common examples are sucrose (glucose + fructose), lactose (glucose + galactose), and maltose (two molecules of glucose).",
+        "native_land": "Earth"
+      },
+      {
+        "name": "butter",
+        "description": "Butter is a dairy product made from the fat and protein components of milk or cream. It is a semi-solid emulsion at room temperature, consisting of approximately 80% butterfat. It is used at room temperature as a spread, melted as a condiment, and used as an ingredient in baking, sauce making, pan frying, and other cooking procedures. Most frequently made from cows' milk, butter can also be manufactured from the milk of other mammals, including sheep, goats, buffalo, and yaks. Salt, flavorings, or preservatives are sometimes added to butter. Rendering butter produces clarified butter or ghee, which is almost entirely butterfat. Butter is a water-in-oil emulsion resulting from an inversion of the cream, where the milk proteins are the emulsifiers. Butter remains a solid when refrigerated, but softens to a spreadable consistency at room temperature, and melts to a thin liquid consistency at 32 to 35 °C (90 to 95 °F).",
+        "native_land": "Earth"
+      },
+      {
+        "name": "milk",
+        "description": "Milk is a nutrient-rich liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals, including breastfed human infants before they are able to digest solid food. Early-lactation milk is called colostrum, which contains antibodies that strengthen the immune system and thus reduces the risk of many diseases. It holds many other nutrients, including protein and lactose. Interspecies consumption of milk is not uncommon, particularly among humans, many of whom consume the milk of other mammals. As an agricultural product, milk is extracted from mammals during or soon after pregnancy. Dairy farms produced about 730 million tonnes of milk in 2011, from 260 million dairy cows. India is the world's largest producer of milk, and is the leading exporter of skimmed milk powder, yet it exports few other milk products. The ever increasing rise in domestic demand for dairy products and a large demand-supply gap could lead to India being a net importer of dairy products in the future.",
+        "native_land": "Earth"
+      },
+      {
+        "name": "chocolate",
+        "description": "Chocolate is a usually sweet, brown food preparation of roasted and ground cacao seeds that is made in the form of a liquid, paste, or in a block, or used as a flavoring ingredient in other foods. The earliest evidence of use traces to the Olmecs (Mexico), with evidence of chocolate beverages dating to 1900 BC. The majority of Mesoamerican people made chocolate beverages, including the Maya and Aztecs. The word chocolate comes from the Classical Nahuatl word chocolātl, and entered the English language from the Spanish language. The seeds of the cacao tree have an intense bitter taste and must be fermented to develop the flavor. After fermentation, the beans are dried, cleaned, and roasted. The shell is removed to produce cacao nibs, which are then ground to cocoa mass, unadulterated chocolate in rough form. Once the cocoa mass is liquefied by heating, it is called chocolate liquor. The liquor also may be cooled and processed into its two components: cocoa solids and cocoa butter. Baking chocolate, also called bitter chocolate, contains cocoa solids and cocoa butter in varying proportions, without any added sugar. Powdered baking cocoa, which contains more fiber than it contains cocoa butter, can be processed with alkali to produce dutch cocoa. Much of the chocolate consumed today is in the form of sweet chocolate, a combination of cocoa solids, cocoa butter or added vegetable oils, and sugar. Milk chocolate is sweet chocolate that additionally contains milk powder or condensed milk. White chocolate contains cocoa butter, sugar, and milk, but no cocoa solids.",
+        "native_land": "Earth"
+      }
+    ]
+  }
+]

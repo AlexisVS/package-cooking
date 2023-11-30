@@ -1,0 +1,28 @@
+{
+  "name": "cooking",
+  "description": "Basic package for testing the framework when we use cooking recipes and foods for dealing with the framework",
+  "version": "0.0.1",
+  "author": "AlexisVS",
+  "licence": "LGPL-3",
+  "depends_on": [
+    "core"
+  ],
+  "apps": [
+    {
+      "name": "APPS_COOKING",
+      "description": "Basic package for testing the framework when we use cooking recipes and foods for dealing with the framework",
+      "url": "/cooking",
+      "icon": "restaurant,",
+      "color": "#D32F2F",
+      "access": {
+        "groups": [
+          "base.group_user"
+        ]
+      }
+    },
+    "auth",
+    "app",
+    "settings"
+  ],
+  "tags": []
+}
