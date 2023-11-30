@@ -1,6 +1,8 @@
 <?php
 
 
+namespace cooking;
+
 use equal\orm\Model;
 
 class Meal extends Model
@@ -11,32 +13,29 @@ class Meal extends Model
         return [
             'name' => [
                 'type' => 'string',
-                'length' => 255,
                 'required' => true,
                 'unique' => true
             ],
 
             'description' => [
                 'type' => 'string',
-                'length' => 255,
                 'required' => false,
             ],
 
             'native_land' => [
                 'type' => 'string',
-                'length' => 255,
                 'required' => false,
             ],
 
             'chef_id' => [
                 'type' => 'many2one',
-                'foreign_object' => 'Chef',
+                'foreign_object' => 'cooking\Chef',
                 'required' => true,
             ],
 
             'mealcategories_ids' => [
                 'type' => 'many2many',
-                'foreign_object' => 'MealCategory',
+                'foreign_object' => 'cooking\MealCategory',
                 'foreign_field' => 'mealcategories_ids',
                 'rel_table' => 'cooking_rel_meal_mealcategory',
                 'rel_foreign_key' => 'mealcategory_id',
