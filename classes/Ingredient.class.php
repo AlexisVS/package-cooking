@@ -17,7 +17,7 @@ class Ingredient extends Model
             ],
 
             'description' => [
-                'type' => 'string',
+                'type' => 'text',
                 'description' => 'Description of the Ingredient.',
                 'required' => false,
             ],
