@@ -1,0 +1,45 @@
+{
+  "name": "Meal category default form",
+  "description": "Default form for Meal category",
+  "actions": [],
+  "layout": {
+    "groups": {
+      "label": "Meal category",
+      "sections": [
+        {
+          "rows": [
+            {
+              "columns": [
+                {
+                  "width": "50%",
+                  "items": [
+                    {
+                      "type": "field",
+                      "value": "id",
+                      "width": "25%"
+                    },
+                    {
+                      "type": "field",
+                      "value": "name",
+                      "width": "25%"
+                    },
+                    {
+                      "type": "field",
+                      "value": "description",
+                      "width": "25%"
+                    },
+                    {
+                      "type": "field",
+                      "value": "meals_ids",
+                      "width": "25%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

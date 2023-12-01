@@ -1,0 +1,38 @@
+{
+  "name": "Meal category default list",
+  "description": "Default list for Meal category",
+  "domain": [],
+  "filters": [],
+  "layout": {
+    "items": [
+      {
+        "type": "field",
+        "value": "id",
+        "width": "25%",
+        "sortable": true,
+        "readonly": true
+      },
+      {
+        "type": "field",
+        "value": "name",
+        "width": "25%",
+        "sortable": true,
+        "readonly": true
+      },
+      {
+        "type": "field",
+        "value": "description",
+        "width": "25%",
+        "sortable": true,
+        "readonly": true
+      },
+      {
+        "type": "field",
+        "value": "meals_ids",
+        "width": "25%",
+        "sortable": true,
+        "readonly": true
+      }
+    ]
+  }
+}

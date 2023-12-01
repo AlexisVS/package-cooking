@@ -1,0 +1,56 @@
+{
+  "name": "Meal default list",
+  "description": "Default list for Meal",
+  "domain": [],
+  "filters": [],
+  "layout": {
+    "items": [
+      {
+        "type": "field",
+        "value": "id",
+        "width": "15%",
+        "sortable": true,
+        "readonly": true
+      },
+      {
+        "type": "field",
+        "value": "name",
+        "width": "15%",
+        "sortable": true,
+        "readonly": true
+      },
+      {
+        "type": "field",
+        "value": "description",
+        "width": "15%",
+        "sortable": true,
+        "readonly": true
+      },
+      {
+        "type": "field",
+        "value": "native_land",
+        "width": "15%",
+        "sortable": true,
+        "readonly": true
+      },
+      {
+        "type": "field",
+        "value": "chef_id",
+        "width": "15%",
+        "sortable": true,
+        "readonly": true
+      },
+      {
+        "type": "field",
+        "value": "mealcategories_ids",
+        "width": "15%",
+        "sortable": true,
+        "readonly": true,
+        "widget": {
+          "type": "many2many",
+          "domain": []
+        }
+      }
+    ]
+  }
+}
