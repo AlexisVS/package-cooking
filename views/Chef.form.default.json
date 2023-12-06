@@ -3,38 +3,50 @@
   "description": "Default form for Chef",
   "actions": [],
   "layout": {
-    "groups": {
-      "label": "Chef",
-      "sections": [
-        {
-          "rows": [
-            {
-              "columns": [
-                {
-                  "width": "50%",
-                  "items": [
-                    {
-                      "type": "field",
-                      "value": "id",
-                      "width": "25%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "user_id",
-                      "width": "25%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "meals_ids",
-                      "width": "25%"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
+    "width": "100%",
+    "groups": [
+      {
+        "label": "Chef",
+        "sections": [
+          {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "id",
+                        "width": "25%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "user_id",
+                        "width": "25%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "meals_ids",
+                        "width": "100%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

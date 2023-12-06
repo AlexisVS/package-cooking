@@ -3,62 +3,64 @@
   "description": "Default form for Meal",
   "actions": [],
   "layout": {
-    "groups": {
-      "label": "Meal",
-      "sections": [
-        {
-          "rows": [
-            {
-              "columns": [
-                {
-                  "width": "50%",
-                  "items": [
-                    {
-                      "type": "field",
-                      "value": "id",
-                      "width": "14%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "name",
-                      "width": "14%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "description",
-                      "width": "14%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "native_land",
-                      "width": "14%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "chef_id",
-                      "width": "14%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "mealcategories_ids",
-                      "width": "14%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "ingredients_ids",
-                      "width": "14%",
-                      "widget": {
-                        "type": "many2many",
-                        "domain": []
+    "groups": [
+      {
+        "label": "Meal",
+        "sections": [
+          {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "50%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "id",
+                        "width": "14%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "name",
+                        "width": "14%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "description",
+                        "width": "14%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "native_land",
+                        "width": "14%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "chef_id",
+                        "width": "14%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "mealcategories_ids",
+                        "width": "14%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "ingredients_ids",
+                        "width": "14%",
+                        "widget": {
+                          "type": "many2many",
+                          "domain": []
+                        }
                       }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

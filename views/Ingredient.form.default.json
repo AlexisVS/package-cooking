@@ -3,48 +3,50 @@
   "description": "Default form for Ingredient",
   "actions": [],
   "layout": {
-    "groups": {
-      "label": "Ingredient",
-      "sections": [
-        {
-          "rows": [
-            {
-              "columns": [
-                {
-                  "width": "50%",
-                  "items": [
-                    {
-                      "type": "field",
-                      "value": "id",
-                      "width": "20%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "name",
-                      "width": "20%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "description",
-                      "width": "20%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "native_land",
-                      "width": "20%"
-                    },
-                    {
-                      "type": "field",
-                      "value": "meals_ids",
-                      "width": "20%"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
+    "groups": [
+      {
+        "label": "Ingredient",
+        "sections": [
+          {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "50%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "id",
+                        "width": "20%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "name",
+                        "width": "20%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "description",
+                        "width": "20%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "native_land",
+                        "width": "20%"
+                      },
+                      {
+                        "type": "field",
+                        "value": "meals_ids",
+                        "width": "20%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

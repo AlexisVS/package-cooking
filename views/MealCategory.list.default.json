@@ -1,8 +1,6 @@
 {
   "name": "Meal category default list",
   "description": "Default list for Meal category",
-  "domain": [],
-  "filters": [],
   "layout": {
     "items": [
       {

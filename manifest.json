@@ -9,20 +9,22 @@
   ],
   "apps": [
     {
-      "name": "APPS_COOKING",
+      "name": "Cooking",
       "description": "Basic package for testing the framework when we use cooking recipes and foods for dealing with the framework",
-      "url": "/cooking",
-      "icon": "restaurant,",
+      "icon": "restaurant",
       "color": "#D32F2F",
+      "extends": "app",
       "access": {
         "groups": [
-          "base.group_user"
+          "users"
         ]
+      },
+      "params": {
+        "menus": {
+          "left": "cooking.left"
+        }
       }
-    },
-    "auth",
-    "app",
-    "settings"
+    }
   ],
   "tags": []
 }

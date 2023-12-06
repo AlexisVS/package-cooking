@@ -1,8 +1,6 @@
 {
   "name": "Ingredient default list",
   "description": "Default list for Ingredient",
-  "domain": [],
-  "filters": [],
   "layout": {
     "items": [
       {

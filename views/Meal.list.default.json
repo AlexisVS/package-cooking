@@ -1,9 +1,8 @@
 {
   "name": "Meal default list",
   "description": "Default list for Meal",
-  "domain": [],
-  "filters": [],
   "layout": {
+    "width": "100%",
     "items": [
       {
         "type": "field",

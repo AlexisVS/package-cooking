@@ -1,0 +1,24 @@
+[
+  {
+    "name": "cooking\\MealCategory",
+    "lang": "en",
+    "description": "Add the three basic meal categories: Breakfast, Lunch, Dinner",
+    "data": [
+      {
+        "id": 1,
+        "name": "Breakfast",
+        "description": "Breakfast is the most important meal of the day."
+      },
+      {
+        "id":  2,
+        "name": "Lunch",
+        "description": "Lunch is the second most important meal of the day."
+      },
+      {
+        "id":  3,
+        "name": "Dinner",
+        "description": "Dinner is the third most important meal of the day."
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "name": "Cooking menu",
+  "access": {
+    "groups": [
+      "users",
+      "admins"
+    ]
+  },
+  "layout": {
+    "items": [
+      {
+        "id": "cooking",
+        "label": "Cooking Menu",
+        "description": "",
+        "icon": "restaurant",
+        "type": "parent",
+        "children": [
+          {
+            "id": "cooking.chef",
+            "type": "entry",
+            "label": "Chefs",
+            "description": "",
+            "context": {
+              "entity": "cooking\\Chef",
+              "view": "list.default"
+            }
+          },
+          {
+            "id": "cooking.ingredient",
+            "type": "entry",
+            "label": "Ingredients",
+            "description": "",
+            "context": {
+              "entity": "cooking\\Ingredient",
+              "view": "list.default"
+            }
+          },
+          {
+            "id": "cooking.meal",
+            "type": "entry",
+            "label": "Meals",
+            "description": "",
+            "context": {
+              "entity": "cooking\\Meal",
+              "view": "list.default"
+            }
+          },
+          {
+            "id": "cooking.mealCategory",
+            "type": "entry",
+            "label": "Meal Categories",
+            "description": "",
+            "context": {
+              "entity": "cooking\\MealCategory",
+              "view": "list.default"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
