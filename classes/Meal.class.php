@@ -33,6 +33,7 @@ class Meal extends Model
                 'required' => true,
             ],
 
+
             'mealcategories_ids' => [
                 'type' => 'many2many',
                 'foreign_object' => 'cooking\MealCategory',

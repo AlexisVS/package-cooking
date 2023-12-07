@@ -6,8 +6,8 @@
     "data": [
       {
         "id": 1,
-        "name": "Spaghetti bolognese",
-        "description": "Spaghetti bolognese is a popular Italian dish consisting of spaghetti served with a meat and tomato sauce.",
+        "name": "Spaghetti Bolognese",
+        "description": "Spaghetti Bolognese is a popular Italian dish consisting of spaghetti served with a meat and tomato sauce.",
         "native_land": "Italy",
         "chef_id": 1,
         "mealcategories_ids": [3],

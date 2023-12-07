@@ -8,6 +8,7 @@
         "label": "Meal",
         "sections": [
           {
+            "width": "100%",
             "rows": [
               {
                 "columns": [
@@ -17,37 +18,65 @@
                       {
                         "type": "field",
                         "value": "id",
-                        "width": "14%"
+                        "width": "100%"
                       },
                       {
                         "type": "field",
                         "value": "name",
-                        "width": "14%"
-                      },
-                      {
-                        "type": "field",
-                        "value": "description",
-                        "width": "14%"
+                        "width": "100%"
                       },
                       {
                         "type": "field",
                         "value": "native_land",
-                        "width": "14%"
+                        "width": "100%"
                       },
                       {
                         "type": "field",
                         "value": "chef_id",
-                        "width": "14%"
-                      },
+                        "width": "100%",
+                        "widget": {
+                          "heading": true,
+                          "type": "many2one",
+                          "domain": ["chef_id", "=", "user.id"]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "width": "50%",
+                    "items": [
+                      {
+                        "type": "field",
+                        "value": "description",
+                        "width": "100%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
                       {
                         "type": "field",
                         "value": "mealcategories_ids",
-                        "width": "14%"
-                      },
+                        "width": "100%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
                       {
                         "type": "field",
                         "value": "ingredients_ids",
-                        "width": "14%",
+                        "width": "100%",
                         "widget": {
                           "type": "many2many",
                           "domain": []

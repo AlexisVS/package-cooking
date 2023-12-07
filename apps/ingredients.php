@@ -79,5 +79,5 @@ $get_html = function (array $attributes) {
 };
 
 //` if we got the ingredient_id and if the template file can be found, read the template and decorate it with current post values
-if (!is_null($params['ingredient_id']) && file_exists('packages/blog/html/template.html'))
-    print(decorate_template(file_get_contents('packages/blog/html/template.html'), $get_html));
+if (!is_null($params['ingredient_id']) && file_exists('packages/cooking/html/template.html'))
+    print(decorate_template(file_get_contents('packages/cooking/html/template.html'), $get_html));

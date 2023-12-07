@@ -2,7 +2,7 @@
   "/cooking/ingredients": {
     "GET": {
       "description": "Returns all ingredients",
-      "operation": "?get=core_model_collect&entity=cooking\\Ingredient"
+      "operation": "?show=cooking_ingredients&ingredient_id=1"
     }
   }
 }

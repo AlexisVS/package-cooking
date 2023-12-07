@@ -9,6 +9,7 @@
   ],
   "apps": [
     {
+      "id": "cooking",
       "name": "Cooking",
       "description": "Basic package for testing the framework when we use cooking recipes and foods for dealing with the framework",
       "icon": "restaurant",

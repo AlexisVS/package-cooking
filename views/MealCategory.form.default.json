@@ -7,6 +7,7 @@
         "label": "Meal category",
         "sections": [
           {
+            "width": "100%",
             "rows": [
               {
                 "columns": [
@@ -16,22 +17,45 @@
                       {
                         "type": "field",
                         "value": "id",
-                        "width": "25%"
+                        "width": "100%"
                       },
                       {
                         "type": "field",
                         "value": "name",
-                        "width": "25%"
-                      },
+                        "width": "100%"
+                      }
+                    ]
+                  },
+                  {
+                    "width": "50%",
+                    "items": [
                       {
                         "type": "field",
                         "value": "description",
-                        "width": "25%"
-                      },
+                        "width": "100%"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Meals",
+        "sections": [
+          {
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "width": "100%",
+                    "items": [
                       {
                         "type": "field",
                         "value": "meals_ids",
-                        "width": "25%"
+                        "width": "100%"
                       }
                     ]
                   }

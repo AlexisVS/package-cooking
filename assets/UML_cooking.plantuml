@@ -1,0 +1,71 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class cooking_chef {
+   id: int(11)
+   creator: int(11)
+   created: datetime
+   modifier: int(11)
+   modified: datetime
+   deleted: tinyint(4)
+   state: varchar(255)
+   user_id: int(11)
+}
+class cooking_ingredient {
+   id: int(11)
+   creator: int(11)
+   created: datetime
+   modifier: int(11)
+   modified: datetime
+   deleted: tinyint(4)
+   state: varchar(255)
+   name: varchar(255)
+   description: longtext
+   native_land: varchar(255)
+}
+class cooking_meal {
+   id: int(11)
+   creator: int(11)
+   created: datetime
+   modifier: int(11)
+   modified: datetime
+   deleted: tinyint(4)
+   state: varchar(255)
+   name: varchar(255)
+   description: varchar(255)
+   native_land: varchar(255)
+   chef_id: int(11)
+}
+class cooking_mealcategory {
+   id: int(11)
+   creator: int(11)
+   created: datetime
+   modifier: int(11)
+   modified: datetime
+   deleted: tinyint(4)
+   state: varchar(255)
+   name: varchar(255)
+   description: varchar(255)
+}
+class cooking_rel_meal_ingredient {
+   id: int(11)
+   meal_id: int(11)
+   ingredient_id: int(11)
+}
+class cooking_rel_meal_mealcategory {
+   id: int(11)
+   mealcategory_id: int(11)
+   meal_id: int(11)
+}
+
+cooking_meal }|-- cooking_chef
+cooking_meal }|-- cooking_rel_meal_ingredient
+cooking_ingredient }|-- cooking_rel_meal_ingredient
+cooking_mealcategory }|-- cooking_rel_meal_mealcategory
+cooking_meal }|-- cooking_rel_meal_mealcategory
+
+
+@enduml
