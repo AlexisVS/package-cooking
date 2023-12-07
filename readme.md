@@ -401,7 +401,7 @@ views/Meal.form.default.json:
 
 ```
 
-## Check the rights are correctly set.
+## Check if the rights are correctly set.
 
 ```bash
 ./equal.run --do=test_fs-consistency
