@@ -15,7 +15,7 @@ create a simple package.
 
 ## Install guide
 
-### 1. Clone the repository
+### Clone the repository
 
 In Equal framework the apps are packages.
 Go to `/var/www/html/packages` and run this command.
