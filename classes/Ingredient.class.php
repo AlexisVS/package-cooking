@@ -31,7 +31,7 @@ class Ingredient extends Model
             'meals_ids' => [
                 'type' => 'many2many',
                 'foreign_object' => 'cooking\Meal',
-                'foreign_field' => 'meals_ids',
+                'foreign_field' => 'meal_id',
                 'rel_table' => 'cooking_rel_meal_ingredient',
                 'rel_foreign_key' => 'meal_id',
                 'rel_local_key' => 'ingredient_id',

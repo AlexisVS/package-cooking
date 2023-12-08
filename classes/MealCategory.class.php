@@ -18,13 +18,13 @@ class MealCategory extends Model
             ],
 
             'description' => [
-                'type' => 'string',
+                'type' => 'text',
                 'required' => false,
             ],
             'meals_ids' => [
                 'type' => 'many2many',
                 'foreign_object' => 'cooking\Meal',
-                'foreign_field' => 'meals_ids',
+                'foreign_field' => 'meal_id',
                 'rel_table' => 'cooking_rel_meal_mealcategory',
                 'rel_foreign_key' => 'meal_id',
                 'rel_local_key' => 'mealcategory_id',

@@ -18,7 +18,7 @@ class Meal extends Model
             ],
 
             'description' => [
-                'type' => 'string',
+                'type' => 'text',
                 'required' => false,
             ],
 
@@ -37,7 +37,7 @@ class Meal extends Model
             'mealcategories_ids' => [
                 'type' => 'many2many',
                 'foreign_object' => 'cooking\MealCategory',
-                'foreign_field' => 'mealcategories_ids',
+                'foreign_field' => 'mealcategory_id',
                 'rel_table' => 'cooking_rel_meal_mealcategory',
                 'rel_foreign_key' => 'mealcategory_id',
                 'rel_local_key' => 'meal_id',
@@ -46,7 +46,7 @@ class Meal extends Model
             'ingredients_ids' => [
                 'type' => 'many2many',
                 'foreign_object' => 'cooking\Ingredient',
-                'foreign_field' => 'ingredients_ids',
+                'foreign_field' => 'ingredient_id',
                 'rel_table' => 'cooking_rel_meal_ingredient',
                 'rel_foreign_key' => 'ingredient_id',
                 'rel_local_key' => 'meal_id',
