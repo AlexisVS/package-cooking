@@ -1,6 +1,7 @@
 {
-  "name": "Ingredient default list",
-  "description": "Default list for Ingredient",
+  "name": "Ingredient list",
+  "description": "List of Ingredients",
+  "controller": "cooking_ingredient-collect",
   "layout": {
     "items": [
       {
@@ -8,7 +9,8 @@
         "value": "id",
         "width": "20%",
         "sortable": true,
-        "readonly": true
+        "readonly": true,
+        "visible": false
       },
       {
         "type": "field",
@@ -36,7 +38,8 @@
         "value": "meals_ids",
         "width": "20%",
         "sortable": true,
-        "readonly": true
+        "readonly": true,
+        "visible": false
       }
     ]
   }

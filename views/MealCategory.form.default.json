@@ -4,10 +4,9 @@
   "layout": {
     "groups": [
       {
-        "label": "Meal category",
         "sections": [
           {
-            "width": "100%",
+            "label": "Meal category",
             "rows": [
               {
                 "columns": [
@@ -17,7 +16,8 @@
                       {
                         "type": "field",
                         "value": "id",
-                        "width": "100%"
+                        "width": "100%",
+                        "visible": false
                       },
                       {
                         "type": "field",
@@ -39,13 +39,10 @@
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "label": "Meals",
-        "sections": [
+          },
           {
+            "label": "Meals",
+            "id": "section.meals",
             "rows": [
               {
                 "columns": [

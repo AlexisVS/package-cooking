@@ -1,6 +1,7 @@
 {
-  "name": "Meal default list",
-  "description": "Default list for Meal",
+  "name": "Meal list",
+  "description": "List of Meals",
+  "controller": "cooking_meal-collect",
   "layout": {
     "width": "100%",
     "items": [
@@ -9,7 +10,8 @@
         "value": "id",
         "width": "15%",
         "sortable": true,
-        "readonly": true
+        "readonly": true,
+        "visible": false
       },
       {
         "type": "field",
@@ -35,6 +37,7 @@
       {
         "type": "field",
         "value": "chef_id",
+        "label": "Chef",
         "width": "15%",
         "sortable": true,
         "readonly": true
@@ -45,10 +48,7 @@
         "width": "15%",
         "sortable": true,
         "readonly": true,
-        "widget": {
-          "type": "many2many",
-          "domain": []
-        }
+        "visible": false
       }
     ]
   }

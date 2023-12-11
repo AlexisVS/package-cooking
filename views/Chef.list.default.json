@@ -1,6 +1,6 @@
 {
-  "name": "Chef default list",
-  "description": "Default list for Chef",
+  "name": "Chef list",
+  "description": "List of Chefs",
   "layout": {
     "items": [
       {
@@ -23,7 +23,8 @@
         "value": "meals_ids",
         "width": "40%",
         "sortable": true,
-        "readonly": true
+        "readonly": true,
+        "visible": false
       }
     ]
   }

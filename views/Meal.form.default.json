@@ -5,10 +5,9 @@
   "layout": {
     "groups": [
       {
-        "label": "Meal",
         "sections": [
           {
-            "width": "100%",
+            "label": "Meal",
             "rows": [
               {
                 "columns": [
@@ -18,7 +17,8 @@
                       {
                         "type": "field",
                         "value": "id",
-                        "width": "100%"
+                        "width": "100%",
+                        "visible": false
                       },
                       {
                         "type": "field",
@@ -33,11 +33,10 @@
                       {
                         "type": "field",
                         "value": "chef_id",
+                        "label": "Chef",
                         "width": "100%",
                         "widget": {
-                          "heading": true,
-                          "type": "many2one",
-                          "domain": ["chef_id", "=", "user.id"]
+                          "type": "many2one"
                         }
                       }
                     ]
@@ -53,7 +52,13 @@
                     ]
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "label": "Meal categories",
+            "id": "section.mealcategories_ids",
+            "rows": [
               {
                 "columns": [
                   {
@@ -62,12 +67,20 @@
                       {
                         "type": "field",
                         "value": "mealcategories_ids",
-                        "width": "100%"
+                        "widget": {
+                          "width": "100%"
+                        }
                       }
                     ]
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "label": "Ingredients",
+            "id": "section.ingredients_ids",
+            "rows": [
               {
                 "columns": [
                   {
@@ -76,11 +89,7 @@
                       {
                         "type": "field",
                         "value": "ingredients_ids",
-                        "width": "100%",
-                        "widget": {
-                          "type": "many2many",
-                          "domain": []
-                        }
+                        "width": "100%"
                       }
                     ]
                   }

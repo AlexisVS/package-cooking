@@ -5,10 +5,10 @@
   "layout": {
     "groups": [
       {
-        "label": "Ingredient",
         "sections": [
           {
-            "width": "100%",
+            "id": "section.ingredients_id",
+            "label": "Ingredient",
             "rows": [
               {
                 "columns": [
@@ -18,7 +18,8 @@
                       {
                         "type": "field",
                         "value": "id",
-                        "width": "100%"
+                        "width": "100%",
+                        "visible": false
                       },
                       {
                         "type": "field",
@@ -43,7 +44,13 @@
                     ]
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "label": "Meals",
+            "id": "section.ingredient.meals",
+            "rows": [
               {
                 "columns": [
                   {
@@ -53,7 +60,11 @@
                         "type": "field",
                         "label": "Meals",
                         "value": "meals_ids",
-                        "width": "100%"
+                        "width": "100%",
+                        "widget": {
+                          "type": "many2many",
+                          "id": "Meal.default.list"
+                        }
                       }
                     ]
                   }

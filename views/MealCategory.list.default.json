@@ -1,6 +1,7 @@
 {
-  "name": "Meal category default list",
-  "description": "Default list for Meal category",
+  "name": "Meal category list",
+  "description": "List for Meal categories",
+  "controller": "cooking_mealcategory-collect",
   "layout": {
     "items": [
       {
@@ -8,7 +9,8 @@
         "value": "id",
         "width": "25%",
         "sortable": true,
-        "readonly": true
+        "readonly": true,
+        "visible": false
       },
       {
         "type": "field",
@@ -29,7 +31,8 @@
         "value": "meals_ids",
         "width": "25%",
         "sortable": true,
-        "readonly": true
+        "readonly": true,
+        "visible": false
       }
     ]
   }

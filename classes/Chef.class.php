@@ -30,7 +30,7 @@ class Chef extends Model
             'meals_ids' => [
                 'type' => 'one2many',
                 'foreign_object' => 'cooking\Meal',
-                'foreign_field' => 'meal_id',
+                'foreign_field' => 'chef_id',
             ],
         ];
     }
