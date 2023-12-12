@@ -2,41 +2,43 @@
 [![eQual](https://img.shields.io/badge/framework-eQualFramework-brightgreen)](https://github.com/equalframework/equal)
 [![Maintainer](https://img.shields.io/badge/maintainer-alexandraYesbabylon-blue)](https://github.com/swann-martin)
 
-# eQual Framework and Cooking Application Documentation :
+# eQual Framework and Cooking Application Documentation
 
 Welcome to the documentation for the eQual Framework and the cooking application. This document will guide you
 through the setup and usage of the eQual Framework, as well as the specific features and components of the cooking
 application.
 
-## About cooking
-The cooking package is a simple application to manage some meals. It is a good example of how to use eQual framework to
-create a simple package.
+## Welcome
 
+Welcome to the documentation for the eQual Framework and the Cooking Application. This document will guide you through
+the setup and usage of the eQual Framework, as well as the specific features and components of the Cooking Application.
 
-## Install guide
+## About Cooking
 
-### Clone the repository
+The Cooking package is a simple application for managing meals. It serves as a good example of how to use the eQual
+framework to create a simple package.
 
-In Equal framework the apps are packages.
-Go to `/var/www/html/packages` and run this command.
+## Installation Guide
+
+### Clone the Repository
+
+In eQual Framework, apps are treated as packages. Navigate to `/var/www/html/packages` and run the following command:
 
 ```bash
 cd /var/www/html/packages
 git clone https://github.com/AlexisVS/Equal-Package-cooking.git cooking
 ```
 
-
 ## Model Entity relational
 
 ![UML diagram from draw.io](./assets/UML_cooking.svg)
 
-
 ## Package structure
 
-The application is organized into various components, which are stored within a package folder located under
-the `/packages` directory. In this example, the package is named `/cooking`.
+The application is organized into various components, stored within a package folder located under the /packages
+directory. In this example, the package is named cooking.
 
-Each package is structured as follows:
+Each package follows this structure:
 
 ```
 cooking
@@ -52,27 +54,29 @@ cooking
 ├── manifest.json
 ```
 
-It corresponds to the MVC pattern. In an eQual package, the "classes" is the Model, "data" regroups the Controllers ad "
-views" are the views in json.
-If you want to create a new project, you only need to create a new directory under packages and add classes, data, views
-and the manifest.json.
+It corresponds to the MVC pattern. In an eQual package, "classes" represent the Model, "data" regroups the Controllers,
+and "views" are the views in JSON format. To create a new project, create a new directory under packages and add
+classes, data, views, and the manifest.json.
 
 ## Initialize the package and Check its consistency :
 
-Initialize the package cooking.
+Initialize the cooking package using the following CLI command:
 
 ### CLI command:
+
 ```shell
 ./equal.run --do=init_package --package=cooking --import=true
 ```
 
 ### URL:
-[?do=init_package&package=cooking&import=true](http://equal.local/index.php?do=init_package&package=cooking&import=true)
 
-This will initialize the package cooking but also the package core since the manifest indicates that cooking
-depends on core.
+Access the initialization
+URL: [?do=init_package&package=cooking&import=true](http://equal.local/index.php?do=init_package&package=cooking&import=true)
+
+This command initializes the cooking package and its dependencies, as indicated in the manifest file.
 
 /packages/cooking/manifest.json:
+
 ```json
 {
   "name": "cooking",
@@ -117,14 +121,15 @@ files (JSON). Typing this command.
 ./equal.run --do=test_package-consistency --package=cooking
 ```
 
-### You will find the initial "fake" data
+### Initial "Fake" Data
 
 The format must respect a pattern. If the class is nest in a subdirectory and if the case is upper or
 lower. `init\data\{nameofthepackage}_{entity}.json`
 
-**Example of init data for Meal instance**
+Ensure the data follows a specific pattern. For example, the init data for a Meal instance:
 
 cooking_meal.json:
+
 ```json
 [
   {
@@ -138,8 +143,20 @@ cooking_meal.json:
         "description": "Spaghetti Bolognese is a popular Italian dish consisting of spaghetti served with a meat and tomato sauce.",
         "native_land": "Italy",
         "chef_id": 1,
-        "mealcategories_ids": [3],
-        "ingredients_ids": [1, 2, 4, 5, 8, 9, 10, 12, 18]
+        "mealcategories_ids": [
+          3
+        ],
+        "ingredients_ids": [
+          1,
+          2,
+          4,
+          5,
+          8,
+          9,
+          10,
+          12,
+          18
+        ]
       }
     ]
   }
@@ -148,9 +165,8 @@ cooking_meal.json:
 
 ## Model definition
 
-Each model is defined in a `.class.php` file located in the `/packages/cooking/classes` directory. All classes
-inherit from a common ancestor: the Model class, which is declared in the `equal\orm` namespace and defined
-in `/lib/equal/orm/Model.class.php`.
+Each model is defined in a `.class.php` file located in the `/packages/cooking/classes` directory. All classes inherit from
+a common ancestor: the Model class, declared in the equal\orm namespace and defined in `/lib/equal/orm/Model.class.php`.
 
 In this context, a class is always referred to as an entity and belongs to a specific package. Packages and their
 subdirectories are used as namespaces with the format `package_name`.
@@ -180,7 +196,7 @@ class Meal extends Model
             ],
 
             'description' => [
-                'type' => 'string',
+                'type' => 'text',
                 'required' => false,
             ],
 
@@ -199,24 +215,25 @@ class Meal extends Model
             'mealcategories_ids' => [
                 'type' => 'many2many',
                 'foreign_object' => 'cooking\MealCategory',
-                'foreign_field' => 'mealcategories_ids',
+                'foreign_field' => 'meals_ids',
                 'rel_table' => 'cooking_rel_meal_mealcategory',
                 'rel_foreign_key' => 'mealcategory_id',
                 'rel_local_key' => 'meal_id',
+                'description' => 'Meal categories the meal belongs to.'
             ],
 
             'ingredients_ids' => [
                 'type' => 'many2many',
                 'foreign_object' => 'cooking\Ingredient',
-                'foreign_field' => 'ingredients_ids',
+                'foreign_field' => 'meals_ids',
                 'rel_table' => 'cooking_rel_meal_ingredient',
                 'rel_foreign_key' => 'ingredient_id',
                 'rel_local_key' => 'meal_id',
+                'description' => 'Ingredients the meal is made of.'
             ],
         ];
     }
 }
-
 ```
 
 ## Views
@@ -226,18 +243,20 @@ For each entity, you should have two views : `list` and `form`. These views can 
 
 The standard filename format for these views is: `{class_name}.{view_type}.{view_name}.json`.
 Pay attention !
-The filename format should respect the case of the class. If your class is `Meal.class.php` your view should be something
+The filename format should respect the case of the class. If your class is `Meal.class.php` your view should be
+something
 like `Meal.list.default.json` or  `Meal.form.default.json`.
 It has to match the classes format so if you nested your files in subdirectories for these views
 is: `{directory}/{class_name}.{view_type}.{view_name}.json`.
 
 For example `views/Meal.list.default.json` will match the class `classes/Meal.class.php`
 
-**Example of a view**
+### Example of a view
 
 ![Screen of Meal List](./assets/cooking_meal_list.png)
 
 Meal.list.default.json:
+
 ```json
 {
   "name": "Meal default list",
@@ -297,11 +316,12 @@ Meal.list.default.json:
 
 ```
 
-**Example of form view**
+### Example of form view
 
 ![Screen Meal form ](./assets/cooking_meal_form.png)
 
 views/Meal.form.default.json:
+
 ```json
 {
   "name": "Meal default form",
@@ -342,7 +362,11 @@ views/Meal.form.default.json:
                         "widget": {
                           "heading": true,
                           "type": "many2one",
-                          "domain": ["chef_id", "=", "user.id"]
+                          "domain": [
+                            "chef_id",
+                            "=",
+                            "user.id"
+                          ]
                         }
                       }
                     ]

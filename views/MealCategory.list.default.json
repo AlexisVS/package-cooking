@@ -1,7 +1,6 @@
 {
   "name": "Meal category list",
   "description": "List for Meal categories",
-  "controller": "cooking_mealcategory-collect",
   "layout": {
     "items": [
       {

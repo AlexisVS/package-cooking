@@ -1,7 +1,6 @@
 {
   "name": "Meal list",
   "description": "List of Meals",
-  "controller": "cooking_meal-collect",
   "layout": {
     "width": "100%",
     "items": [

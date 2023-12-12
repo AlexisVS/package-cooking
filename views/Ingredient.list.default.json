@@ -1,7 +1,6 @@
 {
   "name": "Ingredient list",
   "description": "List of Ingredients",
-  "controller": "cooking_ingredient-collect",
   "layout": {
     "items": [
       {
